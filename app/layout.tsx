@@ -9,10 +9,10 @@ import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { getServerSideConfig } from "./config/server";
 
 export const metadata: Metadata = {
-  title: "NextChat",
-  description: "Your personal ChatGPT Chat Bot.",
+  title: "小殷Chat - 基于 NextChat 框架和 Cloudflare AI Gateway AI网关的聊天机器人应用，它可以使用 Cloudflare AI Gateway 里提供的模型。",
+  description: "小殷Chat - 基于 NextChat 框架和 Cloudflare AI Gateway AI网关的聊天机器人应用，它可以使用 Cloudflare AI Gateway 里提供的模型。 - Powered by NextChat and Cloudflare AI Gateway",
   appleWebApp: {
-    title: "NextChat",
+    title: "小殷Chat",
     statusBarStyle: "default",
   },
 };

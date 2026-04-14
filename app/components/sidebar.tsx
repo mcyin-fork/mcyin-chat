@@ -250,8 +250,8 @@ export function SideBar(props: { className?: string }) {
       {...props}
     >
       <SideBarHeader
-        title="NextChat"
-        subTitle="Build your own AI assistant."
+        title="小殷Chat"
+        subTitle="基于 NextChat 框架和 Cloudflare AI Gateway AI网关的聊天机器人应用，它可以使用 Cloudflare AI Gateway 里提供的模型。"
         logo={<ChatGptIcon />}
         shouldNarrow={shouldNarrow}
       >
