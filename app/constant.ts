@@ -741,9 +741,24 @@ const ai302Models = [
   "claude-opus-4-20250514",
   "gemini-2.5-pro",
 ];
+const workersAIModels = [
+  "workers-ai/workers-ai-neurons",
+];
 
 let seq = 1000; // 内置的模型序号生成器从1000开始
 export const DEFAULT_MODELS = [
+  ...workersAIModels.map((name) => ({
+    name,
+    available: true,
+    sorted: seq++, // Global sequence sort(index)
+    provider: {
+      id: "workersAI",
+      providerName: "Workers AI",
+      providerType: "workersAI",
+      sorted: 1, // 这里是固定的，确保顺序与之前内置的版本一致
+    },
+  })),
+/*
   ...openaiModels.map((name) => ({
     name,
     available: true,
@@ -909,6 +924,7 @@ export const DEFAULT_MODELS = [
       sorted: 15,
     },
   })),
+*/
 ] as const;
 
 export const CHAT_PAGE_SIZE = 15;
