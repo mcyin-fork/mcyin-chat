@@ -51,11 +51,13 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+{/* 
         {serverConfig?.isVercel && (
           <>
             <SpeedInsights />
           </>
         )}
+ */}
         {serverConfig?.gtmId && (
           <>
             <GoogleTagManager gtmId={serverConfig.gtmId} />
