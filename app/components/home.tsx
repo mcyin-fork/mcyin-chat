@@ -34,7 +34,7 @@ import { initializeMcpSystem, isMcpEnabled } from "../mcp/actions";
 export function Loading(props: { noLogo?: boolean }) {
   return (
     <div className={clsx("no-dark", styles["loading-content"])}>
-      {!props.noLogo && <BotIcon />}
+      {!props.noLogo && <img src="../mcyin/images/logo.webp" alt="小殷Chat" style={{ width: "5rem", height: "5rem", objectFit: "contain" }} />}
       <LoadingIcon />
     </div>
   );
