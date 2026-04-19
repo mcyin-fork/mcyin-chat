@@ -57,7 +57,7 @@ export function AuthPage() {
         ></IconButton>
       </div>
       <div className={clsx("no-dark", styles["auth-logo"])}>
-        <BotIcon />
+        <img src="../mcyin/images/logo.webp" alt="小殷Chat" style={{ width: "5rem", height: "5rem", objectFit: "contain" }} />
       </div>
 
       <div className={styles["auth-title"]}>{Locale.Auth.Title}</div>
